@@ -34,7 +34,16 @@ oov_tok = '<OOV>'
 #%%
 # Data Loading
 videos_df = pd.read_pickle('../US_trending.pkl')
+
+# Use just text columns!
+videos_df = videos_df[['title', 'description', 'category_id', 'category_name']]
 videos_df.head()
+
+# Loading old kaggle processed data (just title, description, category_id and category_name for some old videos)
+video_text_df = pd.read_pickle('../US_trending_kaggle.pkl')
+
+videos_df = pd.concat([videos_df, video_text_df])
+print('Total number of videos (kaggle + our dataset), just textual features: {}'.format(len(videos_df)))
 
 #%%
 # VIDI KAKVO JOS PRETPROCESIRANJE BI TREBALO URADITI

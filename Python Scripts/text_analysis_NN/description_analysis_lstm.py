@@ -5,6 +5,7 @@ Created on Tue Mar 17 15:05:51 2020
 @author: Marko Pejić
 """
 
+
 #%%
 import tensorflow as tf
 import numpy as np

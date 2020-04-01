@@ -1,0 +1,1 @@
+jupyter notebook scripts for colab -> https://drive.google.com/drive/u/0/folders/1NV1UiHdtnAysBxBdhiSXL7jwgqYlBxfx
